@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/0af8c4fc9b.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+
+    <title>Práctica Js</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <nav class="header__navbar">
+            <div id="header__hometitle" class="header__hometitle"><a href="/index.html"><i
+                        class="fas fa-home fa-2x"></i>Inicio</a></div>
+            <div id="header__calctitle" class="header__calctitle"><a href="/calc.html"><i
+                    class="fas fa-calculator fa-2x"></i>Calculadora</a></div>
+        </nav>
+    </header>
+    <main>
+        <fieldset name="form__fieldset">
+            <legend> Datos de contacto </legend>
+            <form action="index.html" class="contact__form" id="contactForm">
+                <div class="form__container">
+                    <div class="form__div--left">
+                        <div class="div__field">
+                            <label class="form__label" for="id">Número de Identificación *</label>
+                            <input class="form__input" type="number" name="id" id="id" required />
+                        </div>
+                        <div class="div__field">
+                            <label class="form__label" for="cellphone">Celular *</label>
+                            <input class="form__input" type="tel" name="cellphone" id="cellphone" required />
+                        </div>
+                        <div class="div__field">
+                            <label class="form__label" for="area">Área/Operación *</label>
+                            <input class="form__input" type="text" name="area" id="area" required>
+                        </div>
+                        <div class="div__field">
+                            <label class="form__label" for="location">Si necesitamos contactarte telefónicamente,
+                                indícanos
+                                ¿dónde te
+                                encuentras? *</label>
+                            <input class="form__input" type="text" name="location" id="location" required />
+                        </div>
+                    </div>
+                    <div class="form__div--right">
+                        <div class="div__field">
+                            <label class="form__label" for="full_name">Nombres y Apellidos *</label>
+                            <input class="form__input" type="text" name="full_name" id="fullName" required />
+                        </div>
+                        <div class="div__field">
+                            <label class="form__label" for="email">Email *</label>
+                            <input class="form__input" type="email" name="email" id="email" required />
+                        </div>
+                        <div class="div__field">
+                            <label class="form__label" for="work_position">Cargo *</label>
+                            <input class="form__input" type="text" name="work_position" id="workPosition" required />
+                        </div>
+                        <div class="div__field">
+                            <label class="form__label" for="free_time">Horario en el que te podemos contactar
+                                *</label>
+                            <input class="form__input" type="time" name="free_time" id="freeTime" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="form__div--button">
+                    <button class="form__button" id="formBtn">Registrar</button>
+                </div>
+            </form>
+        </fieldset>
+    </main>
+    <footer class="footer">
+        Jhon Jairo Serna Córdoba <code class="code">&copy;</code> - Todos los derechos reservados.
+    </footer>
+</body>
+
+</html>
